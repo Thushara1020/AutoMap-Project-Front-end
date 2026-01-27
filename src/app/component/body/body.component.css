@@ -1,0 +1,78 @@
+/* Title Gradient */
+.gradient-text {
+  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+/* Cyber Box */
+.hero-box {
+  background: var(--card-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 60px rgba(255, 247, 13, 0.1);
+}
+
+/* Neon Buttons */
+.btn-neon-cyan {
+  background: transparent;
+  border: 2px solid var(--neon-cyan);
+  color: var(--neon-cyan);
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(255, 255, 14, 0.2);
+}
+
+.btn-neon-cyan:hover {
+  background: var(--neon-cyan);
+  color: #000;
+  box-shadow: 0 0 20px var(--neon-cyan);
+}
+
+.btn-neon-pink {
+  background: transparent;
+  border: 2px solid var(--neon-pink);
+  color: var(--neon-pink);
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.btn-neon-pink:hover {
+  background: var(--neon-pink);
+  color: #fdc007;
+  box-shadow: 0 0 20px var(--neon-pink);
+}
+
+/* Cyber Card with Hover Effect */
+.cyber-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.cyber-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: var(--neon-cyan);
+}
+
+.text-cyan { color: var(--neon-cyan); }
+
+.badge-cyan {
+  background: rgba(0, 242, 255, 0.1);
+  color: var(--neon-cyan);
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  border: 1px solid var(--neon-cyan);
+}
