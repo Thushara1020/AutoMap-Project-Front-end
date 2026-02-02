@@ -1,99 +1,102 @@
-<div class="card border-0 shadow-lg" style="max-width: 420px; border-radius: 30px; overflow: hidden; background: #ffffff; font-family: 'Inter', sans-serif;">
+<div class="container mt-4 d-flex flex-wrap gap-4 justify-content-center">
   
-  <div class="position-relative" style="height: 240px; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); display: flex; align-items: center; justify-content: center;">
-    <div class="position-absolute" style="width: 150px; height: 150px; background: rgba(255,255,255,0.1); border-radius: 50%; top: -20px; right: -20px;"></div>
+  <div class="card shadow-sm border-0 overflow-hidden" style="width: 100%; max-width: 400px; border-radius: 15px;">
+    <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?q=80&w=1000&auto=format&fit=crop" class="card-img-top" alt="Toyota Corolla Axio" style="height: 250px; object-fit: cover;">
     
-    <div class="text-center text-white">
-      <i class="bi bi-shield-check-fill mb-2" style="font-size: 3.5rem; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.2));"></i>
-      <h5 class="fw-light opacity-75 mb-0">{{carList[0].engineModel}}</h5>
+    <div class=" p-4 text-white text-center position-relative" style="background-color: #fdc007;">
+      <h3 class="mb-0 fw-bold">Toyota Corolla Axio</h3>
+      <span class="badge rounded-pill bg-light text-primary mt-2 px-3">Hybrid</span>
     </div>
 
-    <div class="position-absolute bottom-0 start-0 m-3 d-flex gap-2">
-      <span class="badge rounded-pill bg-glass p-2 px-3" style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); color: white;">
-        <i class="bi bi-leaf-fill me-1 text-warning"></i> EngineType:{{carList[0].engineType}}
-      </span>
-      <span class="badge rounded-pill bg-glass p-2 px-3" style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); color: white;">
-        <i class="bi bi-leaf-fill me-1 text-warning"></i>EngineModel: {{carList[0].engineModel}}
-      </span>
+    <div class="card-body">
+      <p class="text-muted small mb-4 text-center italic">"A reliable and fuel-efficient hybrid sedan, perfect for family use."</p>
+      <div class="row g-3">
+        <div class="col-6">
+          <div class="d-flex align-items-center">
+            <i class="bi bi-engine-fill me-2 text-primary"></i>
+            <div>
+              <small class="text-muted d-block">Engine</small>
+              <strong>1500cc (1NZ-FXE)</strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="d-flex align-items-center">
+            <i class="bi bi-fuel-pump-fill me-2 text-success"></i>
+            <div>
+              <small class="text-muted d-block">Mileage</small>
+              <strong>28 km/L</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-3">
+      <table class="table table-sm table-borderless mb-0">
+        <tbody>
+          <tr>
+            <td class="text-muted"><i class="bi bi-gear-wide-connected me-2"></i>Transmission</td>
+            <td class="text-end fw-semibold">CVT</td>
+          </tr>
+          <tr>
+            <td class="text-muted"><i class="bi bi-shield-check me-2"></i>Airbags</td>
+            <td class="text-end fw-semibold">6</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div class="position-absolute top-0 end-0 m-3">
-      <span class="badge bg-danger rounded-pill px-3 py-2 shadow-sm text-uppercase">{{carList[0].airbagCount}} Airbags</span>
+    <div class="card-footer bg-light border-0 d-flex justify-content-between p-3">
+        <small><strong>Weight:</strong> 1140 kg</small>
+        <small><strong>Ground Clearance:</strong> 140 mm</small>
     </div>
   </div>
 
-  <div class="card-body p-4">
-    <div class="d-flex justify-content-between align-items-start mb-3">
-      <div>
-        <span class="text-primary fw-bold text-uppercase small tracking-widest" style="letter-spacing: 2px;">{{carList[0].brand}}</span>
-        <h2 class="fw-black text-dark mb-0" style="font-weight: 800;">{{carList[0].model}}</h2>
-        <div class="d-flex flex-wrap gap-2 mt-2">
-          <small class="text-muted fw-bold">Grades: {{carList[0].mainGrades}}</small>
-        </div>
-      </div>
-      <div class="text-end">
-         <div class="text-success fw-bold h4 mb-0">{{carList[0].fuelConsumption}}</div>
-         <small class="text-muted">Efficiency</small>
-      </div>
+  <div class="card shadow-sm border-0 overflow-hidden" style="width: 100%; max-width: 400px; border-radius: 15px;">
+    <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?q=80&w=1000&auto=format&fit=crop" class="card-img-top" alt="Toyota Corolla Axio" style="height: 250px; object-fit: cover;">
+    
+    <div class=" p-4 text-white text-center position-relative" style="background-color: #fdc007;">
+      <h3 class="mb-0 fw-bold">Toyota Corolla Axio</h3>
+      <span class="badge rounded-pill bg-light text-primary mt-2 px-3">Hybrid</span>
     </div>
 
-    <div class="row g-3 mb-4">
-      <div class="col-4">
-        <div class="text-center p-3 rounded-4" style="background: #f8f9fa; border: 1px solid #eee;">
-          <i class="bi bi-cpu text-primary d-block mb-1 fs-5"></i>
-          <span class="d-block fw-bold small text-dark">{{carList[0].engineCapacity}}</span>
-          <small class="text-muted" style="font-size: 10px;">ENGINE</small>
+    <div class="card-body">
+      <p class="text-muted small mb-4 text-center italic">"A reliable and fuel-efficient hybrid sedan, perfect for family use."</p>
+      <div class="row g-3">
+        <div class="col-6">
+          <div class="d-flex align-items-center">
+            <i class="bi bi-engine-fill me-2 text-primary"></i>
+            <div>
+              <small class="text-muted d-block">Engine</small>
+              <strong>1500cc (1NZ-FXE)</strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="d-flex align-items-center">
+            <i class="bi bi-fuel-pump-fill me-2 text-success"></i>
+            <div>
+              <small class="text-muted d-block">Mileage</small>
+              <strong>28 km/L</strong>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-4">
-        <div class="text-center p-3 rounded-4" style="background: #f8f9fa; border: 1px solid #eee;">
-          <i class="bi bi-gear text-primary d-block mb-1 fs-5"></i>
-          <span class="d-block fw-bold small text-dark">{{carList[0].transmission}}</span>
-          <small class="text-muted" style="font-size: 10px;">TRANS</small>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="text-center p-3 rounded-4" style="background: #f8f9fa; border: 1px solid #eee;">
-          <i class="bi bi-speedometer2 text-primary d-block mb-1 fs-5"></i>
-          <span class="d-block fw-bold small text-dark">{{carList[0].topSpeed}}</span>
-          <small class="text-muted" style="font-size: 10px;">MAX</small>
-        </div>
-      </div>
+      <hr class="my-3">
+      <table class="table table-sm table-borderless mb-0">
+        <tbody>
+          <tr>
+            <td class="text-muted"><i class="bi bi-gear-wide-connected me-2"></i>Transmission</td>
+            <td class="text-end fw-semibold">CVT</td>
+          </tr>
+          <tr>
+            <td class="text-muted"><i class="bi bi-shield-check me-2"></i>Airbags</td>
+            <td class="text-end fw-semibold">6</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-
-    <p class="text-muted mb-4 px-1" style="font-size: 0.9rem; line-height: 1.6; border-left: 3px solid #0d6efd; padding-left: 15px;">
-      {{carList[0].description}}
-    </p>
-
-    <div class="bg-light p-3 rounded-4 mb-4" style="font-size: 0.85rem;">
-      <div class="d-flex justify-content-between mb-2 pb-1 border-bottom border-white">
-        <span class="text-muted"><i class="bi bi-arrows-fullscreen me-2"></i>Dimensions</span>
-        <span class="fw-bold">{{carList[0].dimensions}}</span>
-      </div>
-      <div class="d-flex justify-content-between mb-2 pb-1 border-bottom border-white">
-        <span class="text-muted"><i class="bi bi-suitcase-lg me-2"></i>Boot Space</span>
-        <span class="fw-bold">{{carList[0].bootSpace}}</span>
-      </div>
-      <div class="d-flex justify-content-between mb-2 pb-1 border-bottom border-white">
-        <span class="text-muted"><i class="bi bi-geo-alt me-2"></i>Ground Clearance</span>
-        <span class="fw-bold">{{carList[0].groundClearance}}</span>
-      </div>
-      <div class="d-flex justify-content-between mb-2 pb-1 border-bottom border-white">
-        <span class="text-muted"><i class="bi bi-arrow-repeat me-2"></i>Turning Radius</span>
-        <span class="fw-bold">{{carList[0].turningRadius}}</span>
-      </div>
-      <div class="d-flex justify-content-between">
-        <span class="text-muted"><i class="bi bi-disc me-2"></i>Tire Size</span>
-        <span class="fw-bold">{{carList[0].tireSize}}</span>
-      </div>
+    <div class="card-footer bg-light border-0 d-flex justify-content-between p-3">
+        <small><strong>Weight:</strong> 1140 kg</small>
+        <small><strong>Ground Clearance:</strong> 140 mm</small>
     </div>
-
-    <div class="d-flex justify-content-between align-items-center mb-3 px-1">
-        <span class="text-muted small">Curb Weight: {{carList[0].curbWeight}}</span>
-        <span class="badge bg-dark px-3">{{carList[0].seatingCapacity}} Seater</span>
-    </div>
-
-    <button class="btn btn-primary w-100 py-3 fw-bold shadow-sm" style="border-radius: 15px; background: #1e3c72; border: none;">
-       Book Now <i class="bi bi-arrow-right-short ms-2"></i>
-    </button>
   </div>
 </div>
